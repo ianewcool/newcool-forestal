@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Forestal - NewCooltura Informada",
+  title: "Sector Forestal Chile - CONAF | NewCooltura Informada",
   description: "Oficinas CONAF, permisos forestales, especies nativas y calculadora de plan de manejo",
+  keywords: ["CONAF", "sector forestal", "permisos forestales", "especies nativas", "plan manejo"],
+  openGraph: {
+    title: "Forestal Chile - NewCooltura Informada",
+    description: "CONAF, permisos y manejo forestal",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
